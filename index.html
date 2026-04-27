@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zachary Taylor — Game Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;500;700&display=swap" rel="stylesheet" />
+
+</head>
+<link rel="stylesheet" href="./css/style.css">
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#">ZACHARY<span>.</span>TAYLOR</a>
+  <ul class="nav-links">
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" style="padding-top:0;">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Game Designer &amp; Gameplay Programmer</p>
+    <h1>
+      <span class="outline">Creating</span><br>
+      <span class="hi">Mechanics</span><br>
+      <span class="outline">Players</span><br>
+      Love
+    </h1>
+    <p class="hero-desc">If you can dream it, I can design it.</p>
+    <div class="btn-row">
+      <a href="#projects" class="btn btn-primary">See my games ↓</a>
+      <a href="#contact" class="btn btn-outline">Work with me</a>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <p class="section-label">Selected work</p>
+  <h2 class="section-title">Games &amp; Projects</h2>
+  <!-- Example of a project [FEATURED] Proj-card types: Large or Small.
+    <div class="projects-featured">
+      <div class="proj-card large">
+        <div class="proj-thumb pt1">
+          <div class="proj-thumb-bg">🌌</div>
+          <div class="proj-thumb-icon">🌌</div>
+
+        </div>
+        <div class="proj-info">
+          <p class="proj-genre">Narrative RPG · 2024 · Lead Designer</p>
+          <p class="proj-title">Veilborn Chronicles</p>
+          <p class="proj-desc">An open-world narrative RPG with a branching dialogue system spanning 80,000 lines. Players shape a crumbling empire through diplomacy, war, and myth — every choice echoes forward.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">Unity</span>
+            <span class="proj-tag">Ink Scripting</span>
+            <span class="proj-tag">Narrative Systems</span>
+            <span class="proj-tag">PC / Console</span>
+          </div>
+      </div>
+    </div>
+    -->
+  <div class="projects-featured">
+    <div class="proj-card large" data-modal="scraps">
+      <div class="proj-thumb pt1">
+        <div class="proj-thumb-bg">
+          <img src="./img/ScrapsTitleImg.jpeg" alt="Scraps Title Screen">
+        </div>
+        <div class="proj-thumb-icon"></div>
+        <img src="./img/ScrapsTitleImg.jpeg" alt="Scraps Title Screen">
+      </div>
+      <div class="proj-info">
+        <p class="proj-genre">FPS · 2026 · Level Designer</p>
+        <p class="proj-title">Scraps</p>
+        <p class="proj-desc">A first-person shooter that leads players through puzzle filled rooms where they must power on a nuclear facility to restore life to a wasteland afflicted city.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">Unreal Engine 5.7.4</span>
+          <span class="proj-tag">Blueprint Scripting</span>
+          <span class="proj-tag">Puzzle Design</span>
+          <span class="proj-tag">PC</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-text">
+      <p class="section-label">About me</p>
+      <h2 class="section-title" style="margin-bottom:1.5rem;">Designer,<br>player,<br>dreamer.</h2>
+      <p>I'm a game designer with 1 year of experience and an immense passion for gameplay design. I have experience with multiple coding languages including UE5's Blueprints, C++, C#, Python, HTML, and JavaScript.</p>
+      <p>I love testing the bounds to see what I can create with any given engine or language. The core philosophies of design I follow are document, prototype, test, repeat until I have a mechanic or system that feels just right, keeping player emotions at the core of the design's purpose.</p>
+      <p>When I'm not designing, I'm researching into different games and seeing what makes them tick. I believe that all games have something to glean from, and it's my purpose to document what I believe makes their mechanics work so well.</p>
+    </div>
+    <div>
+      <!-- Stats, try and find something to fill this out with for now.
+      <div class="stats-row">
+        <div class="stat"><span class="stat-num">6+</span><span class="stat-label">Years in games</span></div>
+        <div class="stat"><span class="stat-num">14</span><span class="stat-label">Shipped titles</span></div>
+        <div class="stat"><span class="stat-num">500k</span><span class="stat-label">Players reached</span></div>
+        <div class="stat"><span class="stat-num">3</span><span class="stat-label">Industry awards</span></div>
+      </div>
+      -->
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <p class="section-label">Expertise</p>
+  <h2 class="section-title">What I design</h2>
+  <div class="skills-grid">
+    <div class="skill-block">
+      <span class="skill-icon">⚙️</span>
+      <p class="skill-name">Systems Design</p>
+      <p class="skill-desc">Progression loops, difficulty balancing, and crafting gameplay that leads to surprising synergies.</p>
+    </div>
+    <div class="skill-block">
+      <span class="skill-icon">🔧</span>
+      <p class="skill-name">Prototyping</p>
+      <p class="skill-desc">Unity and Unreal — document, iterate, test, repeat.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <p class="section-label">Contact</p>
+  <h2 class="section-title">Let's make something<br>players won't forget</h2>
+  <div class="contact-inner">
+    <div>
+      <p class="contact-desc">Open to full-time roles, contract work, and collaborations. Let's craft an unforgettable experience — reach out.</p>
+      <div class="contact-links">
+        <a href="mailto:taylor.zachary1213@gmail.com" class="contact-link">
+          <span class="contact-link-icon">✉️</span>
+          <span class="contact-link-label">Email</span>
+          <span class="contact-link-arrow">→</span>
+        </a>
+        <a href="linkedin.com/in/zachary-taylor-gamedes" target="_blank" class="contact-link">
+          <span class="contact-link-icon">💼</span>
+          <span class="contact-link-label">LinkedIn</span>
+          <span class="contact-link-arrow">→</span>
+        </a>
+        <!-- TODO: CREATE RESUME
+        <a href="#" class="contact-link">
+          <span class="contact-link-icon">📄</span>
+          <span class="contact-link-label">Download résumé</span>
+          <span class="contact-link-arrow">→</span>
+        </a>
+        -->
+      </div>
+    </div>
+    <div class="contact-form">
+      <div class="form-group">
+        <label class="form-label">Your Name</label>
+        <input type="text" class="form-input" placeholder="John Doe" />
+      </div>
+      <div class="form-group">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-input" placeholder="johndoe@studio.com" />
+      </div>
+      <div class="form-group">
+        <label class="form-label">Message</label>
+        <textarea class="form-textarea" placeholder="Tell me about the project..."></textarea>
+      </div>
+      <button class="form-submit">Send message →</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 Zachary Taylor — Game Designer</span>
+</footer>
+
+<!-- ══════════════════════════════════════
+     PROJECT MODAL — SCRAPS
+     To add another project modal:
+     1. Duplicate this block, change id="modal-scraps" to id="modal-yourproject"
+     2. Add data-modal="yourproject" to its .proj-card
+     3. Edit the content inside
+════════════════════════════════════════ -->
+<div class="proj-modal-backdrop" id="modal-backdrop"></div>
+
+<div class="proj-modal" id="modal-scraps" role="dialog" aria-modal="true" aria-label="Scraps project case study">
+  <div class="proj-modal-panel">
+
+    <!-- Sticky close handle -->
+    <div class="modal-handle" id="modal-handle-scraps">
+      <div class="modal-handle-inner">
+        <div class="modal-breadcrumb">Projects <span>/</span> Scraps</div>
+        <button class="modal-close-btn" aria-label="Close project">✕ Close</button>
+      </div>
+    </div>
+
+    <div class="modal-content">
+
+      <!-- HERO -->
+      <div class="modal-hero">
+        <div class="modal-hero-bg"></div>
+        <div class="modal-hero-grid"></div>
+        <div class="modal-hero-stripes"></div>
+        <div class="modal-hero-content">
+          <div class="modal-hero-meta">
+            <span class="m-tag">FPS / Puzzle</span>
+            <span style="color:var(--ink-faint)">·</span>
+            <span>2026</span>
+            <span style="color:var(--ink-faint)">·</span>
+            <span>Level Designer</span>
+          </div>
+          <h2 class="modal-title">
+            <span class="outline">Scraps</span>
+          </h2>
+          <p class="modal-tagline">The city is overrun with the infested, scrapper. Get through the quarantine zone and power on the nuclear reactor to get life support and defenses back online. Good luck and Godspeed.</p>
+          <div class="btn-row">
+            <a href="./downloads/TeamHowlite_23_728PM.zip" download class="btn btn-primary">▶ Play the Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- STATS -->
+      <div class="modal-stats">
+        <div class="modal-stat"><span class="modal-stat-num">UE5.7.4</span><span class="modal-stat-label">Engine</span></div>
+        <div class="modal-stat"><span class="modal-stat-num">8</span><span class="modal-stat-label">Puzzle Rooms</span></div>
+        <div class="modal-stat"><span class="modal-stat-num">4</span><span class="modal-stat-label">Team Size</span></div>
+        <div class="modal-stat"><span class="modal-stat-num">2 weeks</span><span class="modal-stat-label">Dev Time</span></div>
+      </div>
+
+      <!-- OVERVIEW -->
+      <div class="modal-section">
+        <p class="modal-section-label">Overview</p>
+        <h3 class="modal-section-title">The Concept</h3>
+        <div class="modal-overview-grid">
+          <div class="modal-overview-body">
+            <p>Scraps is a first-person shooter game that is set in a zombie apocalypse. Society has fallen, and it is up to the scrapper to reclaim the wastes. This level takes the scrapper
+            through the city and quarantine zone in order to re-power the defenses and life support. Once the city's nuclear power plant is back up and operational, the scrapper can move onto their
+            next assignment and the city will be ready for re-population.</p>
+          </div>
+          <div>
+            <p class="modal-info-key">Role</p>
+            <p class="modal-info-val">Level Designer · Blueprint Scripter</p>
+            <p class="modal-info-key">Platform</p>
+            <p class="modal-info-val">PC (Windows)</p>
+            <p class="modal-info-key">Engine</p>
+            <p class="modal-info-val">Unreal Engine 5.7.4</p>
+            <p class="modal-info-key">Tools & Tech</p>
+            <div class="modal-tag-list">
+              <span class="modal-tag">UE5 Blueprints</span>
+              <span class="modal-tag">FAB</span>
+              <span class="modal-tag">Puzzle Design</span>
+            </div>
+            <br>
+            <p class="modal-info-key">Status</p>
+            <p class="modal-info-val" style="color:var(--accent)">● Finished</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- VIDEO EMBED -->
+      <div class="modal-section">
+        <p class="modal-section-label">Gameplay</p>
+        <h3 class="modal-section-title">See It In Action</h3>
+        <div class="modal-video">
+          <video controls width="100%">
+            <source src="./video/YTDown_YouTube_Team-Howlite-Scraps-Project-Beta-Gamepla_Media_nFrz3MLKmtU_001_1080p.mp4" type="video/mp4">
+          </video>
+        </div>
+
+      <!-- DESIGN PILLARS -->
+      <div class="modal-section alt">
+        <p class="modal-section-label">Design</p>
+        <h3 class="modal-section-title">Design Pillars</h3>
+        <div class="modal-pillars">
+          <div class="modal-pillar" data-num="01">
+            <span class="modal-pillar-icon">🧩</span>
+            <p class="modal-pillar-name">Puzzle Design</p>
+            <p class="modal-pillar-desc">Puzzles are introduced in a safe, enclosed environment. Players are allowed to explore, experiment and learn from their mistakes.
+            We opted for leading lines to guide the player, wires that connected different devices and lit up slowly when powered. This ensured that players left feeling clever as they work through
+            more complex challenges.</p>
+          </div>
+          <div class="modal-pillar" data-num="02">
+            <span class="modal-pillar-icon">🖼️</span>
+            <p class="modal-pillar-name">Level Design</p>
+            <p class="modal-pillar-desc">We used leadings lines and zombie "breadcrumbs" to lead the player from objective to objective and ensure that players could not become lost
+            when entering into another objective zone. Zombies helped guide the player to the correct puzzle while leading line wires were implemented to assist with the puzzle clarity.</p>
+        </div>
+      </div>
+
+      <!-- PROCESS -->
+      <div class="modal-section">
+        <p class="modal-section-label">Process</p>
+        <h3 class="modal-section-title">How It Was Built</h3>
+        <div class="process-steps">
+
+          <div class="step">
+            <div class="step-header">
+              <div class="step-num">01</div>
+              <div class="step-content">
+                <p class="step-title">Concept & Documentation</p>
+              </div>
+              <span class="step-arrow">&#8250;</span>
+            </div>
+            <div class="step-drawer">
+              <div class="step-drawer-inner">
+                <div class="step-drawer-content">
+                  <p class="step-body-text">After looking through the creative vision, the first steps we took were
+                  to think about the mechanics that we wanted to design for our puzzles. Then, we designed our map
+                  to both support the creative vision and how our puzzles might interact with the world.</p>
+                  <div class="step-subcategories">
+
+                    <div class="subcategory">
+                      <p class="subcategory-title">Overworld Map</p>
+                      <p class="subcategory-desc">General flow of how the level should progress. </p>
+                      <div class="subcategory-images">
+                        <img src="./img/OverworldMapScraps.png" alt="Overworld map">
+                      </div>
+                      <p class="subcategory-desc">NOTE: The military zone
+                        ended up getting scrapped due to time constraints, leading to a more heavily fortified quarantine
+                        zone with militaristic outposts.</p>
+                    </div>
+
+                    <div class="subcategory">
+                      <p class="subcategory-title">Flowchart</p>
+                      <p class="subcategory-desc">Player progression and puzzle dependency flowchart.</p>
+                      <p>Level Start Flow Chart</p>
+                      <div class="subcategory-images">
+                        <img src="./img/LevelStartScraps.png" alt="Level Start">
+                      </div>
+                      <p>Quarantine Zone</p>
+                      <div class="subcategory-images">
+                        <img src="./img/QuarantineZoneScraps.png" alt="Quarantine Zone">
+                      </div>
+                      <p>Reactor Zone</p>
+                      <div class="subcategory-images">
+                        <img src="./img/ReactorZoneScraps.png" alt="Reactor Zone">
+                      </div>
+                    </div> <!-- Flowchart -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="step">
+          <div class="step-header">
+            <div class="step-num">02</div>
+            <div class="step-content">
+              <p class="step-title">Blockout</p>
+            </div>
+            <span class="step-arrow">&#8250;</span>
+          </div>
+          <div class="step-drawer">
+            <div class="step-drawer-inner">
+              <div class="step-drawer-content">
+                <p class="step-body-text">Placeholder text for blockout category</p>
+                <div class="step-subcategories">
+
+                  <div class="subcategory">
+                    <p class="subcategory-title">Alpha</p>
+                    <p class="subcategory-desc">Progress of Alpha Screenshot</p>
+                    <div class="subcategory-images">
+                      <img src="./img/AlphaScreenshot.png" alt="Alpha Screenshot">
+                    </div>
+                  </div>
+
+                  <div class="subcategory">
+                    <p class="subcategory-title">Beta</p>
+                    <p class="subcategory-desc">Progress of Beta</p>
+                    <div class="subcategory-images">
+                      <img src="./img/BetaScreenshotScraps.png" alt="Beta Screenshot">
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    <div class="step">
+      <div class="step-header">
+        <div class="step-num">03</div>
+        <div class="step-content">
+          <p class="step-title">Blueprinting Systems and Game Mechanics</p>
+        </div>
+        <span class="step-arrow">&#8250;</span>
+      </div>
+      <div class="step-drawer">
+        <div class="step-drawer-inner">
+          <div class="step-drawer-content">
+            <p class="step-body-text">Placeholder text for blueprinting and decision-making</p>
+            <div class="step-subcategories">
+
+              <div class="subcategory">
+                <p class="subcategory-title">Powerbox</p>
+                <p class="subcategory-desc">Screenshot of the event graph</p>
+                <div class="subcategory-images">
+                  <img src="#" alt="Overworld map">
+                </div>
+              </div>
+
+              <div class="subcategory">
+                <p class="subcategory-title">Battery Panel</p>
+                <p class="subcategory-desc">Screenshot of the event graph</p>
+                <div class="subcategory-images">
+                  <img src="#" alt="Flowchart">
+                </div>
+              </div>
+
+              <div class="subcategory">
+                <p class="subcategory-title">Battery Charger</p>
+                <p class="subcategory-desc">Screenshot of the event graph</p>
+                <div class="subcategory-images">
+                  <img src="#" alt="Flowchart">
+                </div>
+              </div>
+
+              <div class="subcategory">
+                <p class="subcategory-title">Keycard Reader</p>
+                <p class="subcategory-desc">Screenshot of the event graph</p>
+                <div class="subcategory-images">
+                  <img src="#" alt="Flowchart">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="step">
+  <div class="step-header">
+    <div class="step-num">04</div>
+    <div class="step-content">
+      <p class="step-title">Playtesting and Iteration</p>
+    </div>
+    <span class="step-arrow">&#8250;</span>
+  </div>
+  <div class="step-drawer">
+    <div class="step-drawer-inner">
+      <div class="step-drawer-content">
+        <p class="step-body-text">Playtesting and iteration is the key foundation to any good game. It's so easy as a developer to create an echo chamber about balance and design when you are the one making all the design decisions. I learned so much from the feedback given to me and learned how to filter the most important feedback for a playable game experience.</p>
+        <div class="step-subcategories">
+
+          <div class="subcategory">
+            <p class="subcategory-title">Alpha Playtest Feeback</p>
+            <p class="subcategory-desc">Initially, we thought the game was in an alright state, decently communicating to the player on what to do and where to go. However, during playtesting, the most feedback we received was actually about the puzzles themselves.
+            They were confusing and frustrating to complete in a timely manner and one area specifically was the worst offender that led to uncompleted playtests. Immediately, we sprung into action, taking extra time to re-design the puzzles and ensure that the player
+             was properly being communicated to. We ended up developing wires to connect to the different power structures and adjusted the timing to have less of a requirement for perfection.</p>
+          </div>
+
+          <div class="subcategory">
+            <p class="subcategory-title">Beta Playtest Feedback</p>
+            <p class="subcategory-desc">Placeholder: talk about what we received...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+        </div>
+      </div>
+
+
+      <!-- CHALLENGES -->
+      <div class="modal-section alt">
+        <p class="modal-section-label">Challenges</p>
+        <h3 class="modal-section-title">Problems & Solutions</h3>
+        <div class="modal-challenges">
+          <div class="modal-challenge">
+            <div class="modal-ch-left">
+              <p class="modal-ch-tag p">Problem</p>
+              <p class="modal-ch-title">Puzzle Design</p>
+              <p class="modal-ch-body">Communicating to the player what different mechanics power what and go where without directly telling the player led to some challenge and frustration.</p>
+            </div>
+            <div class="modal-ch-right">
+              <p class="modal-ch-tag s">Solution</p>
+              <p class="modal-ch-title">Split up areas into smaller sections</p>
+              <p class="modal-ch-body">Splitting up the level into smaller areas allows players to have a more distinct realization of the bounds of the puzzle. They won't be expected to go out of their way for puzzle elements and reduces frustration.</p>
+            </div>
+          </div>
+          <div class="modal-challenge">
+            <div class="modal-ch-left">
+              <p class="modal-ch-tag p">Problem</p>
+              <p class="modal-ch-title">Starting Level Design</p>
+              <p class="modal-ch-body">Levels are difficult to create, starting them on a blank canvas can be intimidating and difficult to fully imagine.</p>
+            </div>
+            <div class="modal-ch-right">
+              <p class="modal-ch-tag s">Solution</p>
+              <p class="modal-ch-title">Design the floorplans with basic furniture and identifiable features.</p>
+              <p class="modal-ch-body">We found out that creating the floor plan allowed us to have a more distinct realization about how specific areas will flow. It also allowed us to have a sense of scale when navigating around without committing too many resources for iteration.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- OUTCOMES -->
+      <div class="modal-section">
+        <p class="modal-section-label">Outcomes</p>
+        <h3 class="modal-section-title">What I Learned</h3>
+        <div class="modal-outcomes">
+          <div class="modal-outcome">
+            <span class="modal-outcome-icon">🖼️</span>
+            <p class="modal-outcome-title">Level Layout</p>
+            <p class="modal-outcome-body">The level layout shifted and molded over time, scrapping ambitious ideas due to time constraints and having to iterate the transitions between different segments. I learned how to re-design areas to create realistic transitions when different parts of the level are scrapped.</p>
+          </div>
+          <div class="modal-outcome">
+            <span class="modal-outcome-icon">📡</span>
+            <p class="modal-outcome-title">Blueprint Communication</p>
+            <p class="modal-outcome-body">When I began the project, I did not have a good level idea about how I should structure the mechanics and create the blueprints to my desired systems. This led to unnecessary parent blueprints and refactoring code to pivot to a more efficient communication method. My main takeaway from this experience was to document and plan out systems before implementing them into the project.</p>
+          </div>
+          <div class="modal-outcome">
+            <span class="modal-outcome-icon">🖧</span>
+            <p class="modal-outcome-title">Team Dynamics</p>
+            <p class="modal-outcome-body">Teamwork is a push and pull system and unexpected situations arise that require adaptation and pivoting. The most challenging aspect I had to adapt to was the differing workflows and mindsets that melded together. Some liked to work consistently every day, while others preferred to work in burst sessions when the deadline was approaching. I had to learn to manage my mindset while adapting to these differing workflows.</p>
+          </div>
+          <div class="modal-outcome">
+            <span class="modal-outcome-icon">📥</span>
+            <p class="modal-outcome-title">Deadlines</p>
+            <p class="modal-outcome-body">It's very important to understand the amount of work there is to do and how much time there is to finish. I quickly realized that I would have to dedicate at least 4 hours of my time per day in order to keep a consistent pace that met with deadline requirements.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+          <!-- /modal-content -->
+  </div><!-- /proj-modal-panel -->
+</div><!-- /proj-modal -->
+<!-- LIGHTBOX -->
+<div class="lightbox-backdrop" id="lightbox">
+  <button class="lightbox-close">✕ Close</button>
+  <img src="" alt="" id="lightbox-img">
+<script>
+  // ── MODAL SYSTEM ──
+  // Opens any modal whose id matches data-modal="X" on a proj-card → id="modal-X"
+
+  const backdrop = document.getElementById('modal-backdrop');
+
+  function openModal(id) {
+    const modal = document.getElementById('modal-' + id);
+    if (!modal) return;
+    backdrop.classList.add('open');
+    modal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    // Scroll modal panel to top
+    modal.querySelector('.proj-modal-panel').scrollTop = 0;
+  }
+
+  function closeAllModals() {
+    document.querySelectorAll('.proj-modal.open').forEach(m => m.classList.remove('open'));
+    backdrop.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  // Card click → open
+  document.querySelectorAll('.proj-card[data-modal]').forEach(card => {
+    card.addEventListener('click', () => openModal(card.dataset.modal));
+  });
+
+  // Backdrop click → close
+  backdrop.addEventListener('click', closeAllModals);
+
+  // Close buttons
+  document.querySelectorAll('.modal-close-btn').forEach(btn => {
+    btn.addEventListener('click', closeAllModals);
+  });
+
+  // Escape key → close
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeAllModals();
+  });
+
+  // ── ACCORDION ──
+  document.querySelectorAll('.step').forEach(step => {
+    step.querySelector('.step-header').addEventListener('click', () => {
+      const isOpen = step.classList.contains('open');
+      // Close all steps first
+      document.querySelectorAll('.step').forEach(s => s.classList.remove('open'));
+      // Open clicked one if it wasn't already open
+      if (!isOpen) step.classList.add('open');
+    });
+  });
+
+  // ── LIGHTBOX ──
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+
+  document.querySelectorAll('.subcategory-images img').forEach(img => {
+    img.addEventListener('click', () => {
+      lightboxImg.src = img.src;
+      lightboxImg.alt = img.alt;
+      lightbox.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightboxImg) return; // clicking image itself won't close
+    lightbox.classList.remove('open');
+    document.body.style.overflow = '';
+  });
+
+  document.querySelector('.lightbox-close').addEventListener('click', () => {
+    lightbox.classList.remove('open');
+    document.body.style.overflow = '';
+  });
+</script>
+</div>
+  </div>
+</body>
+</html>
