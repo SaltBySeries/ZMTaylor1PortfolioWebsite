@@ -116,7 +116,7 @@ Procfile    text
 *.ai   binary
 *.bmp  binary
 *.eps  binary
-*.gif  binary
+*.gif filter=lfs diff=lfs merge=lfs -text
 *.ico  binary
 *.jng  binary
 *.jp2  binary
@@ -177,4 +177,3 @@ Procfile    text
 *.exe binary
 *.pyc binary
 *.mp4 filter=lfs diff=lfs merge=lfs -text
-*.gif filter=lfs diff=lfs merge=lfs -text
