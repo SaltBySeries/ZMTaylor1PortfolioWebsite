@@ -662,3 +662,110 @@ footer {
   width: 100%;
   height: 100%;
 }
+
+
+/* ── GALLERY SLIDESHOW ── */
+.slideshow {
+  position: relative;
+  width: 100%;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  user-select: none;
+}
+
+.slideshow-track {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.slideshow-track img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: var(--surface2);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  cursor: zoom-in;
+}
+
+.slideshow-track img.active {
+  opacity: 1;
+}
+
+/* Prev / Next buttons */
+.slideshow-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: rgba(13,13,15,0.75);
+  border: 1px solid var(--border-hi);
+  color: var(--ink);
+  font-size: 1rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+  font-family: var(--sans);
+}
+
+.slideshow-btn:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.slideshow-btn.prev { left: 0.75rem; }
+.slideshow-btn.next { right: 0.75rem; }
+
+/* Counter */
+.slideshow-counter {
+  position: absolute;
+  bottom: 0.75rem;
+  right: 1rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--ink-muted);
+  background: rgba(13,13,15,0.7);
+  padding: 0.2rem 0.6rem;
+}
+
+/* Dot indicators */
+.slideshow-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.85rem 1rem;
+  border-top: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+
+.slideshow-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--border-hi);
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  border: none;
+  padding: 0;
+}
+
+.slideshow-dot.active {
+  background: var(--accent);
+  transform: scale(1.4);
+}
+
+/* Caption */
+.slideshow-caption {
+  padding: 0.6rem 1rem;
+  font-size: 0.72rem;
+  color: var(--ink-muted);
+  letter-spacing: 0.06em;
+  border-top: 1px solid var(--border);
+  min-height: 2rem;
+}
