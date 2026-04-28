@@ -655,6 +655,63 @@
     lightbox.classList.remove('open');
     document.body.style.overflow = '';
   });
+
+  // ── SLIDESHOW ──
+  document.querySelectorAll('.slideshow').forEach(slideshow => {
+    const track = slideshow.querySelector('.slideshow-track');
+    const images = [...track.querySelectorAll('img')];
+    const prevBtn = slideshow.querySelector('.slideshow-btn.prev');
+    const nextBtn = slideshow.querySelector('.slideshow-btn.next');
+    const counter = slideshow.querySelector('.slideshow-counter');
+    const caption = slideshow.querySelector('.slideshow-caption');
+    const dotsContainer = slideshow.querySelector('.slideshow-dots');
+
+    let current = 0;
+
+    // Build dots
+    images.forEach((_, i) => {
+      const dot = document.createElement('button');
+      dot.classList.add('slideshow-dot');
+      if (i === 0) dot.classList.add('active');
+      dot.addEventListener('click', () => goTo(i));
+      dotsContainer.appendChild(dot);
+    });
+
+    const dots = [...dotsContainer.querySelectorAll('.slideshow-dot')];
+
+    function update() {
+      images.forEach((img, i) => img.classList.toggle('active', i === current));
+      dots.forEach((dot, i) => dot.classList.toggle('active', i === current));
+      counter.textContent = `${current + 1} / ${images.length}`;
+      caption.textContent = images[current].alt || '';
+    }
+
+    function goTo(index) {
+      current = (index + images.length) % images.length;
+      update();
+    }
+
+    prevBtn.addEventListener('click', () => goTo(current - 1));
+    nextBtn.addEventListener('click', () => goTo(current + 1));
+
+    // Click image to lightbox
+    images.forEach(img => {
+      img.addEventListener('click', () => {
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+        lightbox.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    // Keyboard navigation when hovering
+    slideshow.addEventListener('keydown', e => {
+      if (e.key === 'ArrowLeft') goTo(current - 1);
+      if (e.key === 'ArrowRight') goTo(current + 1);
+    });
+
+    update();
+  });
 </script>
 </div>
   </div>
