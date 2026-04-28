@@ -125,7 +125,7 @@ Procfile    text
 *.jpx  binary
 *.jxr  binary
 *.pdf  binary
-*.png  binary
+*.png filter=lfs diff=lfs merge=lfs -text
 *.psb  binary
 *.psd  binary
 *.svg  text
