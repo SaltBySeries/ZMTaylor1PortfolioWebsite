@@ -7,9 +7,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;500;700&display=swap" rel="stylesheet" />
-
+  <link rel="stylesheet" href="./css/style.css">
 </head>
-<link rel="stylesheet" href="./css/style.css">
+
 <body>
 
 <!-- NAV -->
@@ -274,6 +274,7 @@
             <source src="https://media.githubusercontent.com/media/SaltBySeries/ZMTaylor1PortfolioWebsite/main/video/YTDown_YouTube_Team-Howlite-Scraps-Project-Beta-Gamepla_Media_nFrz3MLKmtU_001_1080p.mp4" type="video/mp4">
           </video>
         </div>
+      </div><!-- closes modal-section video -->
 
       <!-- DESIGN PILLARS -->
       <div class="modal-section alt">
@@ -283,17 +284,15 @@
           <div class="modal-pillar" data-num="01">
             <span class="modal-pillar-icon">🧩</span>
             <p class="modal-pillar-name">Puzzle Design</p>
-            <p class="modal-pillar-desc">Puzzles are introduced in a safe, enclosed environment. Players are allowed to explore, experiment and learn from their mistakes.
-            We opted for leading lines to guide the player, wires that connected different devices and lit up slowly when powered. This ensured that players left feeling clever as they work through
-            more complex challenges.</p>
-          </div>
+            <p class="modal-pillar-desc">Puzzles are introduced in a safe, enclosed environment. Players are allowed to explore, experiment and learn from their mistakes. We opted for leading lines to guide the player, wires that connected different devices and lit up slowly when powered. This ensured that players left feeling clever as they work through more complex challenges.</p>
+          </div><!-- closes modal-pillar 01 -->
           <div class="modal-pillar" data-num="02">
             <span class="modal-pillar-icon">🖼️</span>
             <p class="modal-pillar-name">Level Design</p>
-            <p class="modal-pillar-desc">We used leadings lines and zombie "breadcrumbs" to lead the player from objective to objective and ensure that players could not become lost
-            when entering into another objective zone. Zombies helped guide the player to the correct puzzle while leading line wires were implemented to assist with the puzzle clarity.</p>
-        </div>
-      </div>
+            <p class="modal-pillar-desc">We used leading lines and zombie "breadcrumbs" to lead the player from objective to objective and ensure that players could not become lost when entering into another objective zone. Zombies helped guide the player to the correct puzzle while leading line wires were implemented to assist with the puzzle clarity.</p>
+          </div><!-- closes modal-pillar 02 -->
+        </div><!-- closes modal-pillars -->
+      </div><!-- closes modal-section alt -->
 
       <!-- PROCESS -->
       <div class="modal-section">
@@ -353,12 +352,12 @@
                       <div class="subcategory-images">
                         <img src="./img/BubblemapBottom.png" alt="BubblemapBottom">
                       </div>
-                    </div> <!-- Bubblemap -->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+                    </div><!-- Bubblemap -->
+                  </div><!-- closes step-subcategories -->
+                </div><!-- closes step-drawer-content -->
+              </div><!-- closes step-drawer-inner -->
+            </div><!-- closes step-drawer -->
+          </div><!-- closes step 01 -->
         <div class="step">
           <div class="step-header">
             <div class="step-num">02</div>
@@ -440,96 +439,89 @@
                 </div>
               </div>
 
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-<div class="step">
-  <div class="step-header">
-    <div class="step-num">04</div>
-    <div class="step-content">
-      <p class="step-title">Playtesting and Iteration</p>
-    </div>
-    <span class="step-arrow">&#8250;</span>
-  </div>
-  <div class="step-drawer">
-    <div class="step-drawer-inner">
-      <div class="step-drawer-content">
-        <p class="step-body-text">Playtesting and iteration is the key foundation to any good game. It's so easy as a developer to create an echo chamber about balance and design when you are the one making all the design decisions. I learned so much from the feedback given to me and learned how to filter the most important feedback for a playable game experience.</p>
-        <div class="step-subcategories">
+            </div><!-- closes step-subcategories -->
+          </div><!-- closes step-drawer-content -->
+        </div><!-- closes step-drawer-inner -->
+      </div><!-- closes step-drawer -->
+    </div><!-- closes step 03 -->
 
-          <div class="subcategory">
-            <p class="subcategory-title">Alpha Playtest Feeback</p>
-            <p class="subcategory-desc">Initially, we thought the game was in an alright state, decently communicating to the player on what to do and where to go. However, during playtesting, the most feedback we received was actually about the puzzles themselves.
-            They were confusing and frustrating to complete in a timely manner and one area specifically was the worst offender that led to uncompleted playtests. Immediately, we sprung into action, taking extra time to re-design the puzzles and ensure that the player
-             was properly being communicated to. We ended up developing wires to connect to the different power structures and adjusted the timing to have less of a requirement for perfection.</p>
-          <div class="slideshow" data-slideshow="alpha">
-            <div class="slideshow-track">
-              <img src="#" alt="Alpha screenshot 1" class="active">
-              <img src="#" alt="Alpha screenshot 2">
-              <img src="#" alt="Alpha screenshot 3">
-              <img src="#" alt="Alpha screenshot 4">
-              <img src="#" alt="Alpha screenshot 5">
-              <img src="#" alt="Alpha screenshot 6">
-              <img src="#" alt="Alpha screenshot 7">
-              <img src="#" alt="Alpha screenshot 8">
-              <img src="#" alt="Alpha screenshot 9">
-              <img src="#" alt="Alpha screenshot 10">
-            </div>
-            <button class="slideshow-btn prev" aria-label="Previous">‹</button>
-            <button class="slideshow-btn next" aria-label="Next">›</button>
-            <div class="slideshow-counter"></div>
-            <div class="slideshow-caption"></div>
-            <div class="slideshow-dots"></div>
-          </div>
-          </div>
-        </div>
-          <div class="subcategory">
-            <p class="subcategory-title">Beta Playtest Feedback</p>
-            <p class="subcategory-desc">Beta playtest feedback mostly discussed visual errors, combat zone size being too small for the AI for any sort of challenge, and the final reactor puzzle feeling underwhelming.
-              Addressing these concerns was a simple correction, using additional gates in our level to prevent backtracking and preventing the AI from losing aggression on the player to start.
-              The visual bug mostly consisted of feet clipping through floors in the starting area, the easiest solution being to put a collider that made the floor feel more realistic to stand on without hovering on top of it.
-              Finally, the most challenging problem that was addressed was the reactor puzzle feeling too underwhelming. After collaborating with my teammates we decided to refactor the puzzle as a whole to include every mechanic previously introduced in a full mastery course that would power on the reactor.</p>
-
-            <div class="slideshow" data-slideshow="beta">
-              <div class="slideshow-track">
-                <img src="#" alt="Beta screenshot 1" class="active">
-                <img src="#" alt="Beta screenshot 2">
-                <img src="#" alt="Beta screenshot 3">
-                <img src="#" alt="Beta screenshot 4">
-                <img src="#" alt="Beta screenshot 5">
-                <img src="#" alt="Beta screenshot 6">
-                <img src="#" alt="Beta screenshot 7">
-                <img src="#" alt="Beta screenshot 8">
-                <img src="#" alt="Beta screenshot 9">
-                <img src="#" alt="Beta screenshot 10">
+          <div class="step">
+            <div class="step-header">
+              <div class="step-num">04</div>
+              <div class="step-content">
+                <p class="step-title">Playtesting and Iteration</p>
               </div>
-              <button class="slideshow-btn prev" aria-label="Previous">‹</button>
-              <button class="slideshow-btn next" aria-label="Next">›</button>
-              <div class="slideshow-counter"></div>
-              <div class="slideshow-caption"></div>
-              <div class="slideshow-dots"></div>
+              <span class="step-arrow">&#8250;</span>
             </div>
-          </div>
-        </div>
-        <div class="subcategory">
-          <p class="subcategory-title">Top Down Map</p>
-          <div>
-            <img src="#" alt="Top Down Map Screenshot">
-          </div>
-          </div>
+            <div class="step-drawer">
+              <div class="step-drawer-inner">
+                <div class="step-drawer-content">
+                  <p class="step-body-text">Playtesting and iteration is the key foundation to any good game...</p>
+                  <div class="step-subcategories">
 
-          </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+                    <div class="subcategory">
+                      <p class="subcategory-title">Alpha Playtest Feedback</p>
+                      <p class="subcategory-desc">Initially, we thought the game was in an alright state...</p>
+                      <div class="slideshow" data-slideshow="alpha">
+                        <div class="slideshow-track">
+                          <img src="#" alt="Alpha screenshot 1" class="active">
+                          <img src="#" alt="Alpha screenshot 2">
+                          <img src="#" alt="Alpha screenshot 3">
+                          <img src="#" alt="Alpha screenshot 4">
+                          <img src="#" alt="Alpha screenshot 5">
+                          <img src="#" alt="Alpha screenshot 6">
+                          <img src="#" alt="Alpha screenshot 7">
+                          <img src="#" alt="Alpha screenshot 8">
+                          <img src="#" alt="Alpha screenshot 9">
+                          <img src="#" alt="Alpha screenshot 10">
+                        </div>
+                        <button class="slideshow-btn prev" aria-label="Previous">‹</button>
+                        <button class="slideshow-btn next" aria-label="Next">›</button>
+                        <div class="slideshow-counter"></div>
+                        <div class="slideshow-caption"></div>
+                        <div class="slideshow-dots"></div>
+                      </div><!-- closes slideshow alpha -->
+                    </div><!-- closes subcategory alpha -->
 
-        </div>
-      </div>
+                    <div class="subcategory">
+                      <p class="subcategory-title">Beta Playtest Feedback</p>
+                      <p class="subcategory-desc">Beta playtest feedback mostly discussed visual errors...</p>
+                      <div class="slideshow" data-slideshow="beta">
+                        <div class="slideshow-track">
+                          <img src="#" alt="Beta screenshot 1" class="active">
+                          <img src="#" alt="Beta screenshot 2">
+                          <img src="#" alt="Beta screenshot 3">
+                          <img src="#" alt="Beta screenshot 4">
+                          <img src="#" alt="Beta screenshot 5">
+                          <img src="#" alt="Beta screenshot 6">
+                          <img src="#" alt="Beta screenshot 7">
+                          <img src="#" alt="Beta screenshot 8">
+                          <img src="#" alt="Beta screenshot 9">
+                          <img src="#" alt="Beta screenshot 10">
+                        </div>
+                        <button class="slideshow-btn prev" aria-label="Previous">‹</button>
+                        <button class="slideshow-btn next" aria-label="Next">›</button>
+                        <div class="slideshow-counter"></div>
+                        <div class="slideshow-caption"></div>
+                        <div class="slideshow-dots"></div>
+                      </div><!-- closes slideshow beta -->
+                    </div><!-- closes subcategory beta -->
+
+                    <div class="subcategory">
+                      <p class="subcategory-title">Top Down Map</p>
+                      <div class="subcategory-images">
+                        <img src="#" alt="Top Down Map Screenshot">
+                      </div>
+                    </div><!-- closes subcategory top down -->
+
+                  </div><!-- closes step-subcategories -->
+                </div><!-- closes step-drawer-content -->
+              </div><!-- closes step-drawer-inner -->
+            </div><!-- closes step-drawer -->
+          </div><!-- closes step 04 -->
+
+        </div><!-- closes process-steps -->
+      </div><!-- closes modal-section process -->
 
 
       <!-- CHALLENGES -->
@@ -592,12 +584,16 @@
         </div>
       </div>
     </div>
-          <!-- /modal-content -->
-<!-- LIGHTBOX -->
-<div class="lightbox-backdrop" id="lightbox">
-  <button class="lightbox-close">✕ Close</button>
-  <img src="" alt="" id="lightbox-img">
-<script>
+  </div>
+</div>
+
+      <!-- LIGHTBOX -->
+      <div class="lightbox-backdrop" id="lightbox">
+        <button class="lightbox-close">✕ Close</button>
+        <img src="#" alt="" id="lightbox-img">
+      </div><!-- closes lightbox -->
+
+      <script>
   // ── MODAL SYSTEM ──
   // Opens any modal whose id matches data-modal="X" on a proj-card → id="modal-X"
 
@@ -729,6 +725,5 @@
     update();
   });
 </script>
-</div>
 </body>
 </html>
