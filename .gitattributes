@@ -159,7 +159,7 @@ Procfile    text
 *.ogv  binary
 *.swc  binary
 *.swf  binary
-*.webm binary
+*.webm filter=lfs diff=lfs merge=lfs -text
 ## ARCHIVES
 *.7z  binary
 *.gz  binary
