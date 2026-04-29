@@ -382,7 +382,7 @@
                 <p class="subcategory-desc">Screenshot of the event graph</p>
                 <div class="subcategory-images">
                   <video autoplay loop muted playsinline>
-                    <source src="./video/Powerbox.webm" type="video/webm">
+                    <source src="./video/Powerbox.webm" type="video/mp4">
                   </video>
                 </div>
               </div>
@@ -392,7 +392,7 @@
                 <p class="subcategory-desc">Screenshot of the event graph</p>
                 <div class="subcategory-images">
                   <video autoplay loop muted playsinline>
-                    <source src="./video/BatteryPanel.webm" type="video/webm">
+                    <source src="./video/BatteryPanel.mp4" type="video/mp4">
                   </video>
                 </div>
               </div>
@@ -402,7 +402,7 @@
                 <p class="subcategory-desc">Screenshot of the event graph</p>
                 <div class="subcategory-images">
                   <video autoplay loop muted playsinline>
-                    <source src="./video/BatteryCharger.webm" type="video/webm">
+                    <source src="./video/BatteryCharger.mp4" type="video/mp4">
                   </video>
                 </div>
               </div>
@@ -412,7 +412,7 @@
                 <p class="subcategory-desc">Screenshot of the event graph</p>
                 <div class="subcategory-images">
                   <video autoplay loop muted playsinline>
-                    <source src="./video/Keycard.webm" type="video/webm">
+                    <source src="./video/Keycard.mp4" type="video/mp4">
                   </video>
                 </div>
               </div>
@@ -512,11 +512,17 @@
               <p class="modal-ch-tag p">Problem</p>
               <p class="modal-ch-title">Puzzle Design</p>
               <p class="modal-ch-body">Communicating to the player what different mechanics power what and go where without directly telling the player led to some challenge and frustration.</p>
+              <div class="modal-ch-image">
+                <img src="#" alt="Puzzle Design Problem">
+              </div>
             </div>
             <div class="modal-ch-right">
               <p class="modal-ch-tag s">Solution</p>
               <p class="modal-ch-title">Split up areas into smaller sections</p>
               <p class="modal-ch-body">Splitting up the level into smaller areas allows players to have a more distinct realization of the bounds of the puzzle. They won't be expected to go out of their way for puzzle elements and reduces frustration.</p>
+              <div class="modal-ch-image">
+                <img src="#" alt="Puzzle Design Solution">
+              </div>
             </div>
           </div>
           <div class="modal-challenge">
@@ -626,7 +632,7 @@
   const lightbox = document.getElementById('lightbox');
   const lightboxImg = document.getElementById('lightbox-img');
 
-  document.querySelectorAll('.subcategory-images img').forEach(img => {
+  document.querySelectorAll('.subcategory-images img, .modal-ch-image img, .modal-outcome-image img').forEach(img => {
     img.addEventListener('click', () => {
       lightboxImg.src = img.src;
       lightboxImg.alt = img.alt;

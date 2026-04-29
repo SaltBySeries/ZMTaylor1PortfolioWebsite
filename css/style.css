@@ -773,3 +773,22 @@ footer {
   border-top: 1px solid var(--border);
   min-height: 2rem;
 }
+
+/* ── CHALLENGE IMAGES ── */
+.modal-ch-image {
+  margin-top: 1.25rem;
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.modal-ch-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+  cursor: zoom-in;
+}
+
+.modal-ch-image img:hover {
+  transform: scale(1.02);
+}
