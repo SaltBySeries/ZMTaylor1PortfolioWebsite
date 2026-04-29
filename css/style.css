@@ -580,6 +580,10 @@ footer {
   border-radius: 4px;
 }
 
+.subcategory-images img[src$=".gif"] {
+  object-fit: contain;
+}
+
 .subcategory-images img:hover {
   border-color: var(--accent);
 }
